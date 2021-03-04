@@ -12,8 +12,8 @@ result =[[0 for i in range(len(matrix))] for j in range(len(matrix2[0]))]
 
 for i in range(len(matrix)):
     for j in range(len(matrix2[0])):
-        for k in range(len(matrix) - 1):
-            result[j][i] += matrix[j][k] * matrix2[k][i]
+        for k in range(len(matrix2)):
+            result[i][j] += matrix[i][k] * matrix2[k][j]
 
 
 for i in result:
